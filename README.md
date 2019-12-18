@@ -1,2 +1,4 @@
-# muse-wpgtk
-a nice, flat GTK+ theme designed for use with wpgtk
+# Alto GTK theme
+
+A lovechild of FlatColor by wpgtk and FlatRemix, designed to
+work with wpgtk.
