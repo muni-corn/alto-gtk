@@ -17,7 +17,7 @@ progressbar.vertical progress {
     border-radius: 99px;
 }
 progressbar trough {
-    background-color: @color0;
+    background-color: black;
 }
 progressbar progress {
     background-color: @active;
@@ -39,14 +39,11 @@ levelbar trough {
     border-radius: 2px;
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0;
     border-image: none;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    background-color: @bg_color;
+    background-color: black;
     color: @bg_color;
 }
 levelbar trough:disabled {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    background-color: @inactive;
-    color: rgba(0, 0, 0, 0.32);
+    opacity: 0.5;
 }
 levelbar.horizontal.discrete block {
     margin: 0 1px;
@@ -89,23 +86,24 @@ scale slider {
     margin: -10px;
 }
 scale trough {
-    outline-offset: 2px;
-    background-color: @bg_color;
+    background-color: black;
+    border-radius: 99px;
 }
 scale trough:disabled {
-    color: rgba(0, 0, 0, 0.32);
+    opacity: 0.5;
 }
 scale highlight {
-    background-color: @bg_color;
+    background-color: @active;
+    border-radius: 99px;
 }
 scale highlight:disabled {
-    background-color: transparent;
+    opacity: 0.5;
 }
 scale fill {
-    background-color: @bg_color;
+    background-color: black;
 }
 scale fill:disabled {
-    background-color: transparent;
+    opacity: 0.5;
 }
 scale slider {
     background-repeat: no-repeat;

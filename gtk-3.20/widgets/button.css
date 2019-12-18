@@ -3,40 +3,53 @@
  * button *
  **********/
 button {
-    padding: 6px;
+    margin: 8px 4px;
+    padding: 4px;
     border-radius: 6px;
-    background-color: @inactive;
-    background-image: none;
+    background-color: transparent;
+    border-color: @inactive;
     color: @fg_color;
-    box-shadow: 0 1px 2px @bg_color;
-    margin: 4px;
+    box-shadow: 0 2px 2px @bg_color;
+    border-width: 2px;
+    border-style: solid;
 }
 
 button:focus {
-    color: @fg_color;
+
 }
 
 button:hover {
-    background-color: @active;
-    color: @fg_color;
+    border-color: @active;
 }
 
-button:active,
-button:active:hover {
+button.radio {
     color: @fg_color;
-    background-color: @inactive;
-    box-shadow: 0 2px 2px transparent;
+    border: 2px solid @inactive;
+}
+
+button.radio:checked {
+    border: 2px solid @fg-color;
 }
 
 button.toggle:checked {
-    color: @inactive;
-    background-color: @fg_color;
+    border-color: @color7;
+    box-shadow: 0 2px 2px @inactive;
+}
+
+button.toggle:checked:hover {
+    border-color: @color15;
+}
+
+button:active,
+button:active:hover,
+button.toggle:active:checked {
+    border-color: @inactive;
+    box-shadow: 0 2px 2px transparent;
 }
 
 button:disabled {
-    background-color: @bg_color;
-    background-image: none;
-    color: @active;
+    opacity: 0.5;
+    box-shadow: none;
 }
 
 button:active:disabled {
@@ -50,9 +63,4 @@ GtkLinkButton.button:active,
 GtkLinkButton.button:focus:active,
 GtkLinkButton.button:focus:hover {
 
-}
-
-button.radio:checked {
-    color: @fg_color;
-    background-color: shade(@selected_bg_color, 0.83);
 }
