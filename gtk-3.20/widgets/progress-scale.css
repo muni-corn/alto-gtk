@@ -8,17 +8,19 @@ progressbar {
 }
 progressbar.horizontal trough,
 progressbar.horizontal progress {
-    min-height: 9px;
+    min-height: 4px;
+    border-radius: 99px;
 }
 progressbar.vertical trough,
 progressbar.vertical progress {
-    min-width: 9px;
+    min-width: 4px;
+    border-radius: 99px;
 }
 progressbar trough {
-    background-color: shade( @bg_color, 0.8);
+    background-color: @color0;
 }
 progressbar progress {
-    background-color: @selected_bg_color;
+    background-color: @active;
 }
 /*************
  * Level Bar *
@@ -38,12 +40,12 @@ levelbar trough {
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0;
     border-image: none;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    background-color: shade( @bg_color, 0.9);
-    color: shade(@bg_color, 0.8);
+    background-color: @bg_color;
+    color: @bg_color;
 }
 levelbar trough:disabled {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    background-color: shade( @bg_color, 0.7);
+    background-color: @inactive;
     color: rgba(0, 0, 0, 0.32);
 }
 levelbar.horizontal.discrete block {
@@ -59,16 +61,16 @@ levelbar.vertical.discrete trough {
     padding: 1px 2px;
 }
 levelbar block.low {
-    background-color: shade( @selected_bg_color, 0.5);
+    background-color: @selected_bg_color;
 }
 levelbar block.high {
-    background-color: shade( @selected_bg_color, 0.8);
+    background-color: @selected_bg_color;
 }
 levelbar block.full {
-    background-color: shade( @selected_bg_color, 1.0);
+    background-color: @selected_bg_color;
 }
 levelbar block.empty {
-    background-color: alpha(@selected_bg_color, 0.3);
+    background-color: @selected_bg_color;
     color: rgba(0, 0, 0, 0.32);
 }
 /*scale*/
@@ -88,19 +90,19 @@ scale slider {
 }
 scale trough {
     outline-offset: 2px;
-    background-color: alpha(@selected_bg_color, 0.3);
+    background-color: @bg_color;
 }
 scale trough:disabled {
     color: rgba(0, 0, 0, 0.32);
 }
 scale highlight {
-    background-color: @selected_bg_color;
+    background-color: @bg_color;
 }
 scale highlight:disabled {
     background-color: transparent;
 }
 scale fill {
-    background-color: alpha(@selected_bg_color, 0.3);
+    background-color: @bg_color;
 }
 scale fill:disabled {
     background-color: transparent;

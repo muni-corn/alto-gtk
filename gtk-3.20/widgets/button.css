@@ -3,37 +3,40 @@
  * button *
  **********/
 button {
-    padding: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 0px;
-    background-color: @button_normal_color;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: @inactive;
     background-image: none;
-    color: @text_color;
+    color: @fg_color;
+    box-shadow: 0 1px 2px @bg_color;
+    margin: 4px;
 }
 
 button:focus {
-    border: @selected_bg_color 2px dotted;
     color: @fg_color;
 }
 
 button:hover {
-    background-color: shade(@selected_bg_color, 0.9);
+    background-color: @active;
     color: @fg_color;
 }
 
 button:active,
-button:active:hover,
-button.toggle:checked {
+button:active:hover {
     color: @fg_color;
-    background-color: shade(@selected_bg_color, 0.83);
+    background-color: @inactive;
+    box-shadow: 0 2px 2px transparent;
+}
+
+button.toggle:checked {
+    color: @inactive;
+    background-color: @fg_color;
 }
 
 button:disabled {
-    background-color: mix(@color8, @color0, 0.40);
+    background-color: @bg_color;
     background-image: none;
-    color: mix(@text_color, @color0, 0.40);
+    color: @active;
 }
 
 button:active:disabled {

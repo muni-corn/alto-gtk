@@ -2,33 +2,33 @@
  * entry *
  *********/
 entry {
-    padding: 6px 8px;
-    border-width: 1px;
+    padding: 4px;
+    border-width: 0 0 2px 0;
     border-style: solid;
-    border-color: transparent;
+    border-color: @inactive;
     border-radius: 0;
     background-color: @base_color;
     background-image: none;
     color: @text_color;
+    margin: 4px;
 }
 
 entry:active,
 entry:focus {
-    box-shadow: inset 0px 0px @selected_bg_color;
-	border-color: @selected_bg_color;
+	border-color: @active;
 }
 
 entry:selected,
 entry:selected:focus,
 entry selection {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
+    color: @fg_color;
 }
 
 entry:disabled {
-    background-color: shade(@bg_color, 1.04);
+    background-color: @bg_color;
     background-image: none;
-    color: mix(@text_color, @base_color, 0.4);
+    color: @inactive;
+    border-color: black;
 }
 
 entry.progressbar {
