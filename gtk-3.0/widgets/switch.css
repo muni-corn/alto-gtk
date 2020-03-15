@@ -21,10 +21,10 @@ GtkSwitch.slider:insensitive {
 }
 
 GtkSwitch.trough {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-color: @theme_bg_color;
-    background-color: transparent;
+    background-color: @switch_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
 }
@@ -32,7 +32,6 @@ GtkSwitch.trough {
 GtkSwitch.trough:active {
     background-color: @theme_selected_bg_color;
     background-image: none;
-    border-color: @color15;
     color: @theme_selected_fg_color;
 }
 

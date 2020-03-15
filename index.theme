@@ -1,11 +1,5 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=MuseWpgtk
+Name=AltoGtk
 Comment=
 Encoding=UTF-8
-
-[X-GNOME-Metatheme]
-GtkTheme=Polar Night
-MetacityTheme=Polar Night
-ButtonLayout=:minimize,maximize,close
-IconTheme=gnome
