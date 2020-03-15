@@ -21,5 +21,4 @@ row:selected:focus {
     background-color: @selected_bg_color;
     background-image: none;
     color: @selected_fg_color;
-
 }

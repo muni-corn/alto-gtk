@@ -4,7 +4,7 @@
 calendar {
 	padding: 1px;
 	border: 1px solid @bg_color;
-	color: @selected_fg_color;
+	color: @fg_color;
 }
 
 calendar:disabled {

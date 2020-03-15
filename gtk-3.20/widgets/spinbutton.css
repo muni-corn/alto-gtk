@@ -2,13 +2,7 @@
  * spinbutton *
  **************/
 .spinbutton .button {
-
-    color: mix(@text_color, @base_color, 0.4);
-    padding: 2px 4px;
-    border-width: 0;
-    border-radius: 0;
-    border-style: none;
-    background-color: transparent;
+    color: @fg_color;
     background-image: none;
 }
 
@@ -40,7 +34,7 @@
     border-style: none;
     border-radius: 0;
     background-color: @base_color;
-    color: mix(@text_color, @base_color, 0.4);
+    color: @fg_color;
     background-image: none;
     box-shadow: none;
 }

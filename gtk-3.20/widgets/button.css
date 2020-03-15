@@ -13,7 +13,7 @@ button {
 }
 
 button:focus {
-    border: @active 1px dashed;
+    border: @active 1px solid;
 }
 
 button:hover {
@@ -22,6 +22,7 @@ button:hover {
 
 button:active {
     border-color: @color15;
+    border-style: solid;
 }
 
 button.toggle:checked {
@@ -35,6 +36,7 @@ button.toggle:checked:hover {
 button:disabled {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.1);
+    border-style: dashed;
     color: mix(@text_color, transparent, 0.50);
 }
 
