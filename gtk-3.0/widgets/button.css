@@ -5,19 +5,16 @@
 .button {
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
-    padding: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 0px;
-    background-color: shade( @theme_bg_color, 1.58 );
+    padding: 6px 8px;
+    border: 1px solid @inactive;
+    border-radius: 2px;
+    background-color: transparent;
     background-image: none;
-    color: @theme_text_color;
+    color: @theme_fg_color;
 }
 
 .button:hover {
-	background-color: shade( @theme_bg_color, 1.35 );
-    color: @theme_fg_color;
+	background-color: rgba(255, 255, 255, 0.25);
 }
 
 .button:active,
@@ -31,12 +28,12 @@
 }
 
 .button:insensitive {
-    background-color: shade(@theme_bg_color, 1.04);
-    background-image: none;
-    color: mix(@theme_text_color, @theme_base_color, 0.4);
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: mix(@text_color, transparent, 0.50);
 }
 .button *:insensitive {
-    color: mix(@theme_text_color, @theme_base_color, 0.4);
+    color: mix(@text_color, transparent, 0.50);
 }
 
 .button:active:insensitive {

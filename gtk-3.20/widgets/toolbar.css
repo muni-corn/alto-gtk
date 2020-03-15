@@ -8,20 +8,17 @@ toolbar {
     background-image: none;
 }
 
-toolbar button {
-    padding: 2px;
+toolbar button, toolbar button.image-button {
+    padding: 6px;
+    border: none;
 }
 
 toolbar button.text-button {
-    padding: 2px 4px;
+    padding: 4px;
 }
 
 toolbar button.path-bar-button {
 	padding: 6px;
-}
-
-toolbar button.image-button {
-    padding: 2px;
 }
 
 toolbar:disabled {

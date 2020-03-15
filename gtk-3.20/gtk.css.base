@@ -15,6 +15,8 @@
 @define-color color13 {color13};
 @define-color color14 {color14};
 @define-color color15 {color15};
+@define-color active {active};
+@define-color inactive {inactive};
 @define-color selected_bg_color {active};
 @define-color bg_color mix(@color0, @color15, 0.12);
 @define-color tooltip_bg_color mix(@color0, @color15, 0.04);
@@ -35,22 +37,22 @@
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
 /* shadow effects */
-@define-color light_shadow #eeeeee;
-@define-color dark_shadow #222222;
+@define-color light_shadow white;
+@define-color dark_shadow black;
 
 /* misc colors used by gtk+ */
-@define-color info_fg_color @text_color;
-@define-color info_bg_color @bg_color;
-@define-color warning_fg_color @text_color;
-@define-color warning_bg_color @bg_color;
-@define-color question_fg_color @text_color;
-@define-color question_bg_color @theme_selected_bg_color;
+@define-color info_fg_color #00aaff;
+@define-color info_bg_color white;
+@define-color warning_fg_color black;
+@define-color warning_bg_color #ffaa00;
+@define-color question_fg_color white;
+@define-color question_bg_color #00aaff;
 @define-color error_fg_color @text_color;
-@define-color error_bg_color #f52400;
+@define-color error_bg_color #ff0000;
 @define-color link_color mix (@theme_selected_bg_color, black, 0.15);
-@define-color success_color #53a93f;
-@define-color warning_color #f57900;
-@define-color error_color #f52400;
+@define-color success_color #00ffaa;
+@define-color warning_color #ffaa00;
+@define-color error_color #ff0000;
 
 /* widget colors*/
 @define-color border_color shade(@theme_selected_bg_color, 0.2);
@@ -106,3 +108,7 @@
 @import url("widgets/csd.css");
 @import url("widgets/combobox.css");
 @import url("widgets/selection-mode.css");
+
+/* 
+vim: ft=css
+ */
